@@ -1,8 +1,27 @@
 # Ignore virtual environment
-../
-
-
+venv/
+env/
+*/venv/
+*/env/
 
 # Ignore Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Ignore SQLite database (we use PostgreSQL on Render)
+db.sqlite3
+
+# Ignore environment variables file
+.env
+
+# Ignore logs
+*.log
+
+# Ignore compiled files
+*.pot
+*.mo
+
+# Ignore VSCode settings
+.vscode/
